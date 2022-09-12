@@ -1,0 +1,74 @@
+@font-face
+{
+	font-family: "Input-Mono";
+	src: url("fonts/Input-Regular_(InputMonoNarrow-Regular).ttf") format("truetype");
+}
+
+body 
+{
+  background-image: url('img/ul7.png');
+  background-attachment: fixed;
+  /*font-family: Input-Mono, monospace;*/
+	font-family: CenturyGothic, AppleGothic, sans-serif;
+}
+
+h1 
+{
+	text-align: center; 
+	padding: 20px;
+}
+
+.nav 
+{
+	font-size: 18px;
+	text-align: center;
+	padding: 80px;
+}
+
+.text 
+{
+	text-align: center; 
+	padding: 20px
+}
+
+img.sticky_right 
+{
+	position: fixed;
+	right: 0;
+	width: 200px;
+	height: 120px;
+	z-index: 2;
+}
+
+img.sticky 
+{
+	position: fixed;
+	left: 10%;
+	top: 0;
+	width:90vw;
+	z-index: -1;
+}
+
+a {color: black;}
+
+.center 
+{
+  margin: auto;
+  width: 70%;
+}
+
+.img_left 
+{
+	margin: auto;
+	width: 60%;
+	float: left;
+	margin-bottom: 11%;
+}
+
+.img_right 
+{
+	margin: auto;
+	width: 60%;
+	float: right;
+	margin-bottom: 11%;
+}
