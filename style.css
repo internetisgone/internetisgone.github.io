@@ -11,6 +11,8 @@ body
   /*font-family: Input-Mono, monospace;*/
 	font-family: CenturyGothic, AppleGothic, sans-serif;
 	background-color: rgb(238, 201, 207);
+
+	display: flex; flex-direction: column;
 }
 
 h1 
@@ -19,20 +21,54 @@ h1
 	padding: 20px;
 }
 
-/*desktop / landscape display*/
+/*bg image desktop / landscape display*/
 @media (min-aspect-ratio: 3/2)
 {
 	img.sticky {left: 10%;}
-	.projects-container {width: 70vw;}
 }
 
-/*mobile / portrait display*/
+/*bg image mobile / portrait display*/
 @media (max-aspect-ratio: 2/3) 
 {
 	img.sticky {left: -5%;}
 	#stick-embryo {left: -33%;}
+}
 
-	.projects-container {width: 90vw;}
+
+/*projects layout for desktop / landscape display*/
+@media (min-aspect-ratio: 4/3)
+{
+	.projects-container {width: 70vw;}
+
+	.projects-l
+	{
+		margin: auto;
+		width: 66%;
+		float: left;
+		margin-bottom: 11%;
+	}
+
+	.projects-r 
+	{
+		margin: auto;
+		width: 66%;
+		float: right;
+		margin-bottom: 11%;
+	}
+}
+
+/*projects layout for mobile / portrait display*/
+@media (max-aspect-ratio: 4/3) 
+{
+	.projects-container {width: 80vw;}
+
+	/*no left / right distinction*/
+	.projects-l, .projects-r 
+	{
+		margin: auto;
+		width: 100%;
+		margin-bottom: 11%;
+	}
 }
 
 .nav 
@@ -42,34 +78,24 @@ h1
 	padding: 80px;
 }
 
-a {color: black;}
+/*.main-container
+{
+	display: flex; justify-content: center; align-items: center;
+	width: 100vw; height: 100vh;
+	margin: 0;
+	top: 0;	left: 0; bottom: 0;	right: 0;
+}*/
 
-p {text-align: center;}
+a {color: black;}
 
 .projects-container {margin: auto;}
 
-.projects-l
-{
-	margin: auto;
-	width: 60%;
-	float: left;
-	margin-bottom: 11%;
-}
+.projects-container img {width: 100%; /*border-radius: 33px;*/}
 
-.projects-r 
+.projects-container p, .projects-container a
 {
-	margin: auto;
-	width: 60%;
-	float: right;
-	margin-bottom: 11%;
-}
-
-.projects-container img {width: 100%;}
-
-.text 
-{
-	text-align: center; 
-	padding: 20px
+	text-align: center; color: black;
+	text-shadow: 0 0 5px lightcoral, 0 0 15px lightcoral;
 }
 
 img.sticky-right 
@@ -88,4 +114,11 @@ img.sticky
 	height: 100vh; width: auto;
 	z-index: -1;
 	opacity: 0.8;
+}
+
+.footer 
+{
+	width: 100%;
+	bottom: 0;
+	text-align: center;
 }
