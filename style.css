@@ -87,9 +87,12 @@ h1 a {text-decoration: none !important;}
 
 .nav 
 {
-	font-size: 18px;
-	text-align: center;
+	font-size: large;
 	padding: 80px;
+
+	display: flex; align-items: center; justify-content: center;
+	gap: 4%;
+	text-shadow: var(--text-shadow);
 }
 
 /*.main-container
@@ -141,4 +144,5 @@ img.sticky
 	width: 100%;
 	bottom: 0;
 	text-align: center;
+	text-shadow: var(--text-shadow);
 }
