@@ -23,12 +23,24 @@ function scrollToTop()
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+let imgIndex = 0
 function changeImage(el, delta)
 {
     let carousel = el.parentElement
-    let imageElements = carousel.getElementsByTagName("img")
-    //console.log(imageElements.item(0))
+    let imgElements = carousel.getElementsByTagName("img")
 
+    if (delta > 0) //index++
+    {
+        imgIndex = (imgIndex + 1 > imgElements.length - 1)? 0 : (imgIndex + 1);
+        // imgElements.item(imgIndex).style.transform = "translateX(100%)"
+    }
+    else //index--
+    {
+        imgIndex = (imgIndex - 1 < 0)? (imgElements.length - 1) : (imgIndex - 1);
+        // imgElements.item(imgIndex).style.transform = "translateX(-100%)"
+    }
+    
+    console.log("delta = " + delta + ", img index = " + imgIndex + " out of " + imgElements.length)
     //get cur index (check style.display)?
     //change index n display
     
