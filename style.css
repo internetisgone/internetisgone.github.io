@@ -105,8 +105,22 @@ h1 a {text-decoration: none !important;}
 
 .projects-container {margin: auto;}
 
-.projects-container img {width: 100%; /*border-radius: 33px;*/}
+.projects-container img, .projects-container .carousel 
+{width: 100%; height: 100%; position: relative; /*border-radius: 33px;*/}
 
+.carousel #prev, .carousel #next 
+{
+	all: unset; cursor: pointer;
+	position: absolute;
+	width: 27%; height: 100%;
+	background-color: white; opacity: 0.5;
+	z-index: 20;
+}
+.carousel #prev {left: 0;}
+.carousel #next {right: 0;}
+
+/*.carousel img {display: none;}
+*/
 .projects-container p, .projects-container a
 {
 	text-align: center; color: black;
