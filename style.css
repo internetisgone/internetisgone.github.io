@@ -12,7 +12,8 @@ body
 	font-family: CenturyGothic, AppleGothic, sans-serif;
 	background-color: rgb(238, 201, 207);
 
-	display: flex; flex-direction: column;
+	display: flex; 
+	flex-direction: column; /*so the footer stays at the bottom*/
 }
 
 h1 
@@ -20,6 +21,10 @@ h1
 	text-align: center; 
 	padding: 20px;
 }
+
+a {color: black;}
+
+h1 a {text-decoration: none !important;}
 
 /*bg image desktop / landscape display*/
 @media (min-aspect-ratio: 3/2)
@@ -86,8 +91,6 @@ h1
 	top: 0;	left: 0; bottom: 0;	right: 0;
 }*/
 
-a {color: black;}
-
 .projects-container {margin: auto;}
 
 .projects-container img {width: 100%; /*border-radius: 33px;*/}
@@ -98,10 +101,11 @@ a {color: black;}
 	text-shadow: 0 0 5px lightcoral, 0 0 15px lightcoral;
 }
 
-img.sticky-right 
+button.sticky-right 
 {
+	all: unset; cursor: pointer;
 	position: fixed;
-	right: 0;
+	right: 0; top: 3%;
 	width: 200px;
 	height: 120px;
 	z-index: 2;
