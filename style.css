@@ -67,7 +67,7 @@ h1 a {text-decoration: none !important;}
 		margin-bottom: 11%;
 	}
 
-	button.sticky-right {width: 160px; height: 100px;}
+	/* button.sticky-right {width: 160px; height: 100px;} */
 	/*button.sticky-right {width: 120px; height: 150px;} /*4:5*/
 }
 
@@ -84,7 +84,7 @@ h1 a {text-decoration: none !important;}
 		width: 100%;
 		margin-bottom: 11%;
 	}
-	button.sticky-right {width: 80px; height: 50px;}
+	/* button.sticky-right {width: 80px; height: 50px;} */
 	/* button.sticky-right {width: 80px; height: 100px;} */
 }
 
@@ -136,6 +136,7 @@ h1 a {text-decoration: none !important;}
 
 button.sticky-right 
 {
+	width: 160px; height: 100px;
 	outline: none; background: transparent;	border: none; 
 	margin: 0; padding: 0; border: 0; cursor: pointer;
 	position: fixed;
