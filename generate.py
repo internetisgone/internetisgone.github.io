@@ -1,19 +1,20 @@
 from staticjinja import Site
 import os
 
-# gallery
-def generate_gallery():
-    photonames = os.listdir("../photos")
-    print(photonames)
-    # for photoname in photonames:
-    #     if photoname.startswith("."):
-    #         photonames.remove(photoname)
-    # sorted_names = sorted(photonames) # sort by name
-    # # insert img  
+photos_path = "photos"
 
-    # return {'photos': ['1', '2', '3']}
+def get_photos():
+    photonames = os.listdir(photos_path)
+    for photoname in photonames:
+        if photoname.startswith("."):
+            photonames.remove(photoname)
+    # append path 
+    photonames = [photos_path + "/" + photoname for photoname in photonames]
+    print(photonames)
+    # sort by name
+    return sorted(photonames) 
 
 if __name__ == "__main__":
-    # site = Site.make_site(contexts=[("gallery.html", context)])
-    site = Site.make_site()
+    photos = get_photos()
+    site = Site.make_site( contexts = [ ("photos.html", {"photos": photos }) ] )
     site.render()

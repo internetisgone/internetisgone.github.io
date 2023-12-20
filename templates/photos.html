@@ -3,10 +3,11 @@
 {% block content %}
 
 <div class = "img-container">
-    {% for photo in photonames %}
+    {% for photo in photos %}
       <div class = "img-wrapper">
-        <img src = "{{ url_for('static', filename = '/photos/' + photo) }}">
+        <img src = {{ photo }}>
       </div>
     {% endfor %}
 </div>
+
 {% endblock %}
