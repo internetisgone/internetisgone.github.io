@@ -11,8 +11,10 @@ body {
 .container { 
 	min-width: 360px; 
 	width: 60%; 
-	margin: 33px;
+	margin: 20px;
 }
+
+.nav { margin-bottom: 20px; }
 
 a { color: red; }
 

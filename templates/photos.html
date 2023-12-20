@@ -2,6 +2,11 @@
 
 {% block content %}
 
-<p>every truth has the structure of fiction</p>
-
+<div class = "img-container">
+    {% for photo in photonames %}
+      <div class = "img-wrapper">
+        <img src = "{{ url_for('static', filename = '/photos/' + photo) }}">
+      </div>
+    {% endfor %}
+</div>
 {% endblock %}
