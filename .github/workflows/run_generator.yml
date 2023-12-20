@@ -33,6 +33,10 @@ jobs:
   deploy:
     needs: build
 
+    permissions:
+      pages: write
+      id-token: write
+
     environment:
       name: main
       url: ${{ steps.deployment.outputs.page_url }}
