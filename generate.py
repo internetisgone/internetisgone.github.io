@@ -1,9 +1,9 @@
 from staticjinja import Site
 import os
 
-photos_path = "photos"
+PHOTOS_PATH = "photos"
 
-def get_photos():
+def get_photos(photos_path):
     photonames = os.listdir(photos_path)
     for photoname in photonames:
         if photoname.startswith("."):
@@ -15,6 +15,6 @@ def get_photos():
     return sorted(photonames) 
 
 if __name__ == "__main__":
-    photos = get_photos()
+    photos = get_photos(PHOTOS_PATH)
     site = Site.make_site( contexts = [ ("photos.html", {"photos": photos }) ] )
     site.render()
