@@ -1,12 +1,12 @@
 @font-face
 {
 	font-family: "Input-Mono";
-	src: url("fonts/Input-Regular_(InputMonoNarrow-Regular).ttf") format("truetype");
+	src: url("../fonts/Input-Regular_(InputMonoNarrow-Regular).ttf") format("truetype");
 }
 
 body 
 {
-	background-image: url('img/ul7.png');
+	background-image: url('../img/ul7.png');
 	background-attachment: fixed;
 	font-family: Input-Mono, "Courier New", monospace;
 	background-color: rgb(238, 201, 207);
