@@ -1,4 +1,10 @@
-[internetisgone.github.io](https://internetisgone.github.io)<br><br>
+# internetisgone.github.io
 
-static site generated using [staticjinja](https://github.com/staticjinja/staticjinja)<br>
-run `generate.py` to generate pages from `/templates`
+static site generated with [staticjinja](https://github.com/staticjinja/staticjinja)<br>
+
+```
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
+run `generate.py` to generate pages in `/templates` to root dir
