@@ -2,10 +2,14 @@
 
 static site generated with [staticjinja](https://github.com/staticjinja/staticjinja)<br>
 
+## build
 ```
 cd src
 python3 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
 ```
-run `generate.py` to generate pages in `src/templates` to root dir
+generate pages in `src/templates` to root dir
+```
+python3 generate.py
+```
