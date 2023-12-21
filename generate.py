@@ -17,4 +17,4 @@ def get_photos(photos_path):
 if __name__ == "__main__":
     photos = get_photos(PHOTOS_PATH)
     site = Site.make_site( contexts = [ ("photos.html", {"photos": photos }) ] )
-    site.render()
+    site.render(use_reloader=True)
