@@ -1,8 +1,13 @@
+@font-face
+{
+	font-family: "IBM Plex Mono";
+	src: url("fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+
 body {
-	position: absolute;
+	font-family: "IBM Plex Mono", monospace;
 	background-color: black;
 	color: white;
-	font-family: monospace;
 	line-height: 1.5;
 	margin: 0;
 }
@@ -16,7 +21,7 @@ body {
 
 a { color: red; }
 
-ul { padding-left: 16px; line-height: 2; }
+ul { padding-left: 16px; }
 
 .img-container {
 	width: 70%;
@@ -39,6 +44,8 @@ img { max-width: 100%; max-height: 100%; object-fit: contain; }
 	width: 60%;
 	min-width: 360px; 
 }
+
+footer { font-size: smaller; }
 
 @media screen and (max-width: 700px) {
 	.container { margin-left: 10px; margin-right: 10px; }
