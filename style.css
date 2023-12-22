@@ -19,9 +19,11 @@ body {
 
 .nav { margin-bottom: 20px; }
 
-a { color: red; }
+a { color: red; word-wrap: break-word; }
 
-ul { padding-left: 16px; }
+ul { padding-left: 20px; }
+
+li { margin-bottom: 5px;}
 
 .img-container {
 	width: 70%;
