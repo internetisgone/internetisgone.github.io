@@ -3,38 +3,13 @@
 {% block content %}
 
 	<div class="img-container">
+		{% for art_pic in art_pics %}
 		<div class="img-wrapper">
-			<img src="../img/gg.png">
-		</div>
-
-		<div class="img-wrapper">
-			<img src="../img/limbb.png">
-		</div>
-
-		<div class="img-wrapper">
-			<a href="https://eternal100000000.bandcamp.com/album/thegn-silver-blade-shattered-mirror-deceiver" target="_blank">
-				<img src="../img/bttp.png">
+			<a href={{ art_pic }} target="_blank">
+				<img src={{ art_pic }}>
 			</a>
 		</div>
-
-		<div class="img-wrapper">
-			<img src="../img/suspensionn.png">
-		</div>
-
-		<div class="img-wrapper">
-			<img src="../img/knivess.png">
-		</div>
-
-		<!-- <div class="img-wrapper"> 
-			<a href="https://www.hkcr.live/residents/the-footwork-program" target="_blank">
-				<img src="../img/footwork_hobbes_logo.png">
-			</a>
-		</div> -->
-
-		<!-- <div class="projects-l">
-			<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2495835792/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://muonisdead.bandcamp.com/track/de-renched">de renched by muon</a></iframe>
-			<p>de renched (2019), noise / industrial track made in MaxMsp</p>
-		</div> -->
+		{% endfor %}
 
 	</div>
 

@@ -2,6 +2,7 @@ from staticjinja import Site
 import os
 
 PHOTOS_PATH = "../photos"
+ART_PICS = [ "img/gg.png", "img/limbb.png", "img/bttp.png", "img/suspensionn.png", "img/knivess.png" ]
 
 def get_photos(photos_path):
     photonames = os.listdir(photos_path)
@@ -17,7 +18,7 @@ def get_photos(photos_path):
 if __name__ == "__main__":
     photos = get_photos(PHOTOS_PATH)
     site = Site.make_site( 
-            contexts = [ ("photos.html", {"photos": photos }) ],
+            contexts = [ ("photos.html", {"photos": photos }), ("art.html", { "art_pics": ART_PICS })],
             outpath = "../"
         )
     site.render(use_reloader=True)

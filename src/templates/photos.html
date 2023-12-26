@@ -5,7 +5,9 @@
 <div class = "img-container">
     {% for photo in photos %}
       <div class = "img-wrapper">
-        <img src = {{ photo }}>
+        <a href={{ photo }} target="_blank">
+          <img src = {{ photo }}>
+        </a>
       </div>
     {% endfor %}
 </div>
