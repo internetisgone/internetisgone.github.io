@@ -8,8 +8,11 @@ cd src
 python3 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
-```
-generate pages in `src/templates` to root dir
-```
+
+# generate pages in `src/templates` to root dir
 python3 generate.py
+
+# start http server 
+python3 -m http.server
+
 ```
