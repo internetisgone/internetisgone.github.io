@@ -4,6 +4,12 @@
 	src: url("fonts/IBMPlexMono-Regular.ttf") format("truetype");
 }
 
+@font-face
+{
+	font-family: "Menlo";
+	src: url("fonts/Menlo-Regular.ttf") format("truetype");
+}
+
 body {
 	font-family: "IBM Plex Mono", monospace;
 	background-color: black;
@@ -25,6 +31,8 @@ body {
 }
 
 .line {
+	font-family: "Menlo", monospace;
+	font-size: small;
 	color: rgb(106, 1, 1);
 }
 
@@ -62,6 +70,6 @@ footer { font-size: smaller; text-align: center; }
 		width: 90%;
 	}
 	.line {
-		font-size: small;
+		font-size: x-small;
 	}
 }
