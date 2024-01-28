@@ -31,11 +31,26 @@ body {
 	gap: 10px;
 }
 
-.line {
+.nav {
+	text-align: center;
+	margin-top: 10px;
+	/* border-style: dashed;
+	border-color: var(--dark-red);
+	padding: 11px; */
+}
+
+/* .nav::before, .nav::after {
+	content: "";
+	overflow: hidden;
+	white-space: nowrap;
+} */
+
+.divider {
 	font-family: "Menlo", monospace;
-	font-size: small;
 	color:var(--dark-red)
 }
+
+.smol { font-size: small; }
 
 a { color: red; word-wrap: break-word; }
 
