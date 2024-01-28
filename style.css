@@ -16,7 +16,7 @@ body {
 	color: rgb(233, 233, 233);
 	line-height: 1.5;
 	margin: 0; padding: 0;
-	--dark-red: rgb(106, 1, 1);
+	--dark-red: rgb(111, 1, 1);
 }
 
 .container { 
