@@ -90,7 +90,7 @@ footer { font-size: smaller; text-align: center; }
 	.img-container, .text-container {
 		width: 95%;
 	}
-	.line {
+	.divider {
 		font-size: x-small;
 	}
 }
