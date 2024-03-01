@@ -12,7 +12,4 @@ pip3 install -r requirements.txt
 # generate pages in `src/templates` to root dir
 python3 generate.py
 
-# start http server 
-python3 -m http.server
-
 ```
