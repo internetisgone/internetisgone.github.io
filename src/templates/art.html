@@ -5,8 +5,8 @@
 	<div class="img-container">
 		{% for art_pic in art_pics %}
 		<div class="img-wrapper">
-			<a href={{ art_pic }} target="_blank">
-				<img src={{ art_pic }}>
+			<a href={{ art_pic.link }} target="_blank">
+				<img src={{ art_pic.path }}>
 			</a>
 		</div>
 		{% endfor %}
