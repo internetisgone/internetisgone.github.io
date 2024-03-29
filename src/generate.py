@@ -2,7 +2,7 @@ from staticjinja import Site
 import os
 
 PHOTOS_PATH = "../photos"
-ART_PICS = [ "img/gg.png", "img/limbb.png", "img/bttp.png", "img/suspensionn.png", "img/knivess.png" ]
+ART_PICS = ["img/limbb.png", "img/bttp.png", "img/gg.png", "img/suspensionn.png", "img/knivess.png", "img/footwork_hobbes_logo.png" ]
 
 def get_photos(photos_path):
     photonames = os.listdir(photos_path)
